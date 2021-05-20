@@ -1,0 +1,30 @@
+{
+	"bodyAuth" : {
+		"grant_type" : "refresh_token",
+        "client_id" : "INSERT YOUR CLIENT ID",
+        "refresh_token" : "INSERT YOU API KEY REFRESH-TOKEN"
+	},
+	"headersAuth" : {
+	    "Content-Type" : "application/json",
+        "X-UIPATH-TenantName" : "INSERT YOUR TENANT NAME"
+	},
+	"URL_Auth" : "https://account.uipath.com/oauth/token",
+	"headersAddQI" : {
+	    "Content-Type" : "application/json",
+        "X-UIPATH-TenantName" : "INSERT YOUR TENANT NAME",
+		"X-UIPATH-OrganizationUnitId" : "INSERT THE SPECIFIC ORGANIZATION UNIT ID"
+	},
+	"queueName" : "INSERT THE QUEUE NAME",
+	"queuePriority" : "INSERT THE PRIORITY",
+	"URL_AddQI" : "https://platform.uipath.com/INSERT HERE LOGICAL NAME/INSERT HERE TENANT NAME/orchestrator_/odata/Queues/UiPathODataSvc.AddQueueItem",
+	"EmailCredentials" : {
+		"imap_Host" : "INSERT IMAP SERVER HOST",
+		"imap_Port" : "INSERT IMAP PORT",
+		"username" : "INSERT EMAIL ADDRESS TO LISTEN",
+		"password" : "INSERT PASSWORD"
+	},
+	"EmailSelection" : {
+		"filter" : "INSERT FILTER",
+		"folderName" : "INSERT FOLDER NAME TO LISTEN"
+	}
+}
